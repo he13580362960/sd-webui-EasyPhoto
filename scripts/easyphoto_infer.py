@@ -410,6 +410,8 @@ def inpaint(
         animatediff_reserve_scale=animatediff_reserve_scale,
         animatediff_last_image=animatediff_last_image,
         loractl_flag=loractl_flag,
+        restore_faces=True,
+        tiling=False,
     )
 
     return image
@@ -1515,7 +1517,8 @@ def easyphoto_infer_forward(
                         sampler = "Euler a"
                     elif instantid_control:
                         cfg_scale = 5
-                        sampler = "Euler"
+                        # sampler = "Euler"
+                        sampler = "DPM++ 2M Karras"
                     else:
                         cfg_scale = 7
                         sampler = "DPM++ 2M SDE Karras"
@@ -1556,7 +1559,8 @@ def easyphoto_infer_forward(
                         sampler = "Euler a"
                     elif instantid_control:
                         cfg_scale = 5
-                        sampler = "Euler"
+                        # sampler = "Euler"
+                        sampler = "DPM++ 2M Karras"
                     else:
                         cfg_scale = 7
                         sampler = "DPM++ 2M SDE Karras"
@@ -1717,7 +1721,8 @@ def easyphoto_infer_forward(
                         sampler = "Euler a"
                     elif instantid_control:
                         cfg_scale = 5
-                        sampler = "Euler"
+                        # sampler = "Euler"
+                        sampler = "DPM++ 2M Karras"
                     else:
                         cfg_scale = 7
                         sampler = "DPM++ 2M SDE Karras"

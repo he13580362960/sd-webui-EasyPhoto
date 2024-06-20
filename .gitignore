@@ -171,3 +171,4 @@ cython_debug/
 models/stable-diffusion-xl/version.txt
 models/pose_templates
 scripts/thirdparty
+/.idea
