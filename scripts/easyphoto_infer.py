@@ -410,8 +410,8 @@ def inpaint(
         animatediff_reserve_scale=animatediff_reserve_scale,
         animatediff_last_image=animatediff_last_image,
         loractl_flag=loractl_flag,
-        restore_faces=True,
-        tiling=False,
+        restore_faces=False,
+        tiling=True,
     )
 
     return image
